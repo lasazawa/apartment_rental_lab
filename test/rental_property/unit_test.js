@@ -31,7 +31,9 @@ describe("Unit", function(){
     });
 
     it("should include @tenant", function(){
-      expect(myUnit.tenant).to.eql(null);
+      myUnit.tenant = [];
+      //******
+      expect(myUnit.tenant).to.equal.empty;
     });
   });
 
